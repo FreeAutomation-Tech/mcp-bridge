@@ -1,6 +1,11 @@
 from mcp_bridge.protocol import convert_mcp_tool_to_claude
 from mcp_bridge.transport import McpStdioTransport
-from mcp_bridge.llm import ClaudeClient, MAX_ITERATIONS
+from mcp_bridge.llm import (
+    ClaudeClient,
+    MAX_ITERATIONS,
+    DEFAULT_MODEL,
+    DEFAULT_MAX_TOKENS,
+)
 
 TOOL_CALL_ERR = "Error calling tool '{name}': {error}"
 
@@ -85,8 +90,8 @@ def run_bridge(server_command, query, api_key=None,
 
         claude = ClaudeClient(
             api_key=api_key,
-            model=model or ClaudeClient.DEFAULT_MODEL,
-            max_tokens=max_tokens or ClaudeClient.DEFAULT_MAX_TOKENS,
+            model=model or DEFAULT_MODEL,
+            max_tokens=max_tokens or DEFAULT_MAX_TOKENS,
         )
 
         messages = [{"role": "user", "content": query}]
