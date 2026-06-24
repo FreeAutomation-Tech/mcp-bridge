@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-bridge = mcp_bridge.cli:main

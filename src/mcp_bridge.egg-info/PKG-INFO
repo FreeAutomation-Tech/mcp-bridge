@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: mcp-bridge
+Version: 0.1.0
+Summary: Bridge Claude to any MCP server via stdio
+Home-page: https://github.com/FreeAutomation-Tech/mcp-bridge
+License: MIT
+Requires-Python: >=3.9
+Dynamic: requires-python
