@@ -51,3 +51,7 @@ mcp-bridge --server "python -m my_mcp_server" \
 ## Disclaimer
 
 This tool is provided for educational and research purposes. Users are responsible for API usage costs and compliance with MCP server terms of service.
+---
+*If you find this useful, please consider giving it a star ⭐ — it helps others discover it too!*
+
+*Thank you for your support! 🙏*
